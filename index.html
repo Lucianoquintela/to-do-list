@@ -1,37 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List - Javascript - projeto final</title>
-    <link rel="stylesheet" href="/index.css">
 
-   
+    <title>To Do List - JavaScript - Projeto Final</title>
+
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
+
     <header>
-        <input type="text" id="busca" placeholder="pesquisar por titulo">
+        <input
+            type="text"
+            id="busca"
+            onkeyup="pesquisarTarefas()"
+            placeholder="Pesquisar por título"
+        >
     </header>
 
     <main>
+
         <section id="tarefas">
-            <h2>Tarefas <button onclick="novaTarefa()">Nova tarefa</button></h2>
+
+            <h2>
+                Tarefas
+                <button type="button" onclick="abrirModal()">
+                    Nova tarefa
+                </button>
+            </h2>
+
             <h6>Nenhuma tarefa registrada</h6>
+
+            <ul id="lista">
+            </ul>
+
         </section>
-        <section id="overlay"></section>
-        
+
+        <section id="overlay" onclick="fecharModal()"></section>
+
         <div id="criarTarefa" class="modal">
-            <form>
-                <h3>Criar tarefa <box-icon name='x' size="md" onclick="fecharModal()"></box-icon></h3>
-                <label for="titulo">Titulo</label>
-                <input type="text" id="titulo">
-                <label for="descricao">Descriçâo</label>
-                <textarea id="descricao"></textarea>
-                <button>Criar</button>
+
+            <form onsubmit="novaTarefa(event)">
+
+                <h3>
+                    Criar tarefa
+
+                    <box-icon
+                        name="x"
+                        size="md"
+                        onclick="fecharModal()">
+                    </box-icon>
+                </h3>
+
+                <label for="titulo">Título</label>
+
+                <input
+                    type="text"
+                    id="titulo"
+                    required
+                >
+
+                <label for="descricao">Descrição</label>
+
+                <textarea id="descricao" required></textarea>
+
+                <button type="submit">
+                    Criar
+                </button>
+
             </form>
+
         </div>
+
     </main>
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="index.js"></script>
+
+    <script src="./index.js"></script>
+
 </body>
 </html>

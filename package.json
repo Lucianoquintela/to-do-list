@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "api": "npx json-server api.json --whach --port 3000"
+    "api": "npx json-server api.json --watch --port 3000"
   },
   "keywords": [],
   "author": "",

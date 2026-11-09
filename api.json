@@ -1,8 +1,55 @@
+
 {
-    "tarefas":[
-        {
-            "titulo":"tarefa 1",
-            "descrição": "fazer tal coisa"
-        }
-    ]
+  "tarefas": [
+    {
+      "titulo": "Estudar JavaScript",
+      "descricao": "Revisar funções, arrays, objetos e eventos.",
+      "id": 1
+    },
+    {
+      "titulo": "Praticar HTML",
+      "descricao": "Criar estruturas de páginas utilizando tags semânticas.",
+      "id": 2
+    },
+    {
+      "titulo": "Aprender CSS",
+      "descricao": "Praticar Flexbox, Grid e responsividade.",
+      "id": 3
+    },
+    {
+      "titulo": "Estudar React",
+      "descricao": "Aprender componentes, props e useState.",
+      "id": 4
+    },
+    {
+      "titulo": "Organizar o GitHub",
+      "descricao": "Atualizar os repositórios e escrever READMEs dos projetos.",
+      "id": 5
+    },
+    {
+      "titulo": "Finalizar projeto To Do List",
+      "descricao": "Testar cadastro, pesquisa e exclusão de tarefas.",
+      "id": 6
+    },
+    {
+      "titulo": "Praticar Git",
+      "descricao": "Treinar git add, git commit, git push e git pull.",
+      "id": 7
+    },
+    {
+      "titulo": "Estudar Node.js",
+      "descricao": "Entender módulos, npm e criação de servidores.",
+      "id": 8
+    },
+    {
+      "titulo": "Organizar rotina",
+      "descricao": "Planejar horários de estudo e definir prioridades.",
+      "id": 9
+    },
+    {
+      "titulo": "Atualizar portfólio",
+      "descricao": "Adicionar projetos desenvolvidos e revisar as informações.",
+      "id": 10
+    }
+  ]
 }
